@@ -2,12 +2,11 @@ class Question6
 { 
  public static void main(String args[])
  {
-    int i=0,sum=0,s=0;
-    for(i=0;i<101;i++)
-    {
-      s+=(i*i);
-      sum+=i;
-     }
-     System.out.println((sum*sum)-s);
+    int i=100;
+    int s=(i*(i+1))/2;
+    int ss=(i*(i+1)*(2*i+1))/6;
+    int sss=s*s;
+    System.out.println(sss-ss);
+    
      }
    }
