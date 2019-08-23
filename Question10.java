@@ -17,7 +17,7 @@ class Question10
   public static void main(String args[])
   {
     int x=2000000;
-    long sum=0;
+    long sum=2;
       for(int i=2;i<=x;i++)
         if(i%2!=0)
        {
@@ -26,7 +26,7 @@ class Question10
           sum+=i;
           }
          }
-         sum=sum+1;
+         
          System.out.println("sum of the primes number is ="+sum);
          }
         }
