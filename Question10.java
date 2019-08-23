@@ -19,12 +19,14 @@ class Question10
     int x=2000000;
     long sum=0;
       for(int i=2;i<=x;i++)
+        if(i%2!=0)
        {
           if(isPrime(i)==true)
           {
           sum+=i;
           }
          }
+         sum=sum+1;
          System.out.println("sum of the primes number is ="+sum);
          }
         }
