@@ -1,4 +1,4 @@
-import java.io.*;
+
 class Question4
 {
 static  boolean checkpallindrome(int n)
