@@ -2,30 +2,33 @@
  class Question5
  {
  
-    public static void main(String[] args)
+     static int multiple(int fn,int ln)
     {
-        
-        
-              long c = 21;
-              while (1==1)
-    {
-             boolean mul = true;
-          for (int i = 1; i < 21; i++)
-    {
-        mul = true;
-        if ( c % i != 0 )
+        int lcm=0;
+      for(int i=1;i<=ln;i++)
+      {
+       int sn=i;
+       if (fn>sn)
+        lcm=fn;
+        else
+        lcm=sn;
+        while(true)
         {
-            mul = false;
-            break;
+          if(lcm%fn==0 && lcm%sn==0)
+          {
+           fn=lcm;
+           break;
         }
-    }
-       if ( mul )
-    {
-        System.out.println( c );
-        System.exit(21);
-    }
-
-    c++;
-}
-}
-}
+        lcm=lcm+1;
+       }
+      }
+      return lcm;
+     }
+       public static void main(String args[])
+       {
+        System.out.println(multiple(1,20));
+       }
+      }
+           
+        
+     
