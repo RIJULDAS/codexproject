@@ -16,19 +16,19 @@ class Question7
     public static void main(String args[])
     {
         int count=1;
-        long i=2, lp=-1;
+        long i=1, lp=0;
         while(count<=10001)
         {
-             if(i%2!=0)
-             {
+             
+             
             if(isPrime(i))
             {
                 lp=i;
                 count++;
             }
-            i++;
+            i=i+2;
              }
-        }
+        
         System.out.println(lp);
     }
 }
