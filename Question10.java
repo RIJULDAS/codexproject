@@ -18,8 +18,8 @@ class Question10
   {
     int x=2000000;
     long sum=2;
-      for(int i=2;i<=x;i++)
-        if(i%2!=0)
+      for(int i=3;i<=x;i=i+2)
+        
        {
           if(isPrime(i)==true)
           {
